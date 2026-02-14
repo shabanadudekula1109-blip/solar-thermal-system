@@ -1,0 +1,13 @@
+[
+    {
+        "timestamp": "2026-02-14 13:49:13",
+        "solar_irradiance": 800.0,
+        "inlet_temperature": 30.0,
+        "outlet_temperature": 55.0,
+        "mass_flow_rate": 0.02,
+        "thermal_efficiency": 130.81,
+        "heat_gain": 2093.0,
+        "predicted_fault": "Sensor Drift",
+        "confidence_score": 99.0
+    }
+]
