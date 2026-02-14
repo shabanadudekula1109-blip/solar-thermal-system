@@ -1,0 +1,24 @@
+[
+    {
+        "timestamp": "2026-02-02 14:06:26",
+        "solar_irradiance": 370.0,
+        "inlet_temperature": 30.0,
+        "outlet_temperature": 32.83,
+        "mass_flow_rate": 0.02,
+        "thermal_efficiency": 31.99,
+        "heat_gain": 236.71,
+        "predicted_fault": "Heat Leakage",
+        "confidence_score": 85.0
+    },
+    {
+        "timestamp": "2026-02-02 13:53:12",
+        "solar_irradiance": 800.0,
+        "inlet_temperature": 25.0,
+        "outlet_temperature": 34.61,
+        "mass_flow_rate": 0.03,
+        "thermal_efficiency": 75.45,
+        "heat_gain": 1207.22,
+        "predicted_fault": "Normal Condition",
+        "confidence_score": 100.0
+    }
+]

@@ -1,0 +1,35 @@
+[
+    {
+        "timestamp": "2026-02-01 22:34:06",
+        "solar_irradiance": 800.0,
+        "inlet_temperature": 30.0,
+        "outlet_temperature": 43.35,
+        "mass_flow_rate": 0.02,
+        "thermal_efficiency": 69.86,
+        "heat_gain": 1117.84,
+        "predicted_fault": "Pump Degradation",
+        "confidence_score": 27.3
+    },
+    {
+        "timestamp": "2026-02-01 22:33:43",
+        "solar_irradiance": 800.0,
+        "inlet_temperature": 30.0,
+        "outlet_temperature": 43.35,
+        "mass_flow_rate": 0.02,
+        "thermal_efficiency": 69.86,
+        "heat_gain": 1117.84,
+        "predicted_fault": "Pump Degradation",
+        "confidence_score": 27.3
+    },
+    {
+        "timestamp": "2026-02-01 22:28:46",
+        "solar_irradiance": 900.0,
+        "inlet_temperature": 33.0,
+        "outlet_temperature": 49.0,
+        "mass_flow_rate": 0.03,
+        "thermal_efficiency": 111.63,
+        "heat_gain": 2009.28,
+        "predicted_fault": "Sensor Drift",
+        "confidence_score": 99.0
+    }
+]

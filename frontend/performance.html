@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarDiagnose | Performance Analysis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="logo">
+            <i class="fas fa-sun-plant-wilt"></i>
+            <span>SolarDiagnose</span>
+        </div>
+        <div id="backend-status"
+            style="margin: 0.5rem 1.5rem 1.5rem; padding: 0.5rem; background: rgba(255,255,255,0.03); border-radius: 8px; display: flex; align-items: center; gap: 0.8rem; border: 1px solid rgba(255,255,255,0.05);">
+            <div id="backend-status-dot"
+                style="width: 8px; height: 8px; border-radius: 50%; background: #94a3b8; transition: background 0.3s ease;">
+            </div>
+            <span id="backend-status-text"
+                style="font-size: 0.7rem; color: var(--text-muted); font-weight: 500;">Checking
+                Backend...</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-item"><i class="fas fa-chart-line"></i> <span>Dashboard</span></a>
+            <a href="simulation.html" class="nav-item"><i class="fas fa-vial"></i> <span>Simulation</span></a>
+            <a href="performance.html" class="nav-item active"><i class="fas fa-gauge-high"></i>
+                <span>Performance</span></a>
+            <a href="diagnosis.html" class="nav-item"><i class="fas fa-microscope"></i> <span>Fault Diagnosis</span></a>
+            <a href="results.html" class="nav-item"><i class="fas fa-file-invoice"></i> <span>Results & Logs</span></a>
+            <a href="faq.html" class="nav-item"><i class="fas fa-circle-question"></i> <span>FAQs</span></a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header>
+            <div class="header-title">
+                <h1>Performance Evaluation</h1>
+                <p>Comparative analysis against theoretical Hottel-Whillier-Bliss baseline</p>
+            </div>
+        </header>
+
+        <section class="dashboard-grid animate-fade">
+            <div class="card">
+                <div class="card-label">Actual Efficiency</div>
+                <div class="card-value" id="perf-eff">--%</div>
+                <div style="width: 100%; height: 8px; background: var(--glass); border-radius: 10px; margin-top: 10px;">
+                    <div id="eff-progress"
+                        style="width: 0%; height: 100%; background: var(--secondary); border-radius: 10px; transition: width 1s ease;">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-label">Heat Loss Gain</div>
+                <div class="card-value" id="perf-loss">-- W</div>
+                <div class="card-label">Total Energy Loss</div>
+            </div>
+            <div class="card">
+                <div class="card-label">Degradation Index</div>
+                <div class="card-value" style="color: var(--danger)" id="perf-deg">--%</div>
+                <div class="card-label">Loss from Ideal</div>
+            </div>
+        </section>
+
+        <div class="card animate-fade" style="animation-delay: 0.1s">
+            <h3>Comparative Metrics</h3>
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Metric Type</th>
+                        <th>Normal (Ideal)</th>
+                        <th>Current (Actual)</th>
+                        <th>Delta (Loss)</th>
+                    </tr>
+                </thead>
+                <tbody id="perf-table-body">
+                    <tr>
+                        <td colspan="4" style="text-align: center; color: var(--text-muted);">Please run a simulation
+                            first to view analysis</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

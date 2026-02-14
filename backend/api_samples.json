@@ -1,0 +1,51 @@
+
+{
+  "simulate": {
+    "request": {
+      "solar_irradiance": 800,
+      "inlet_temperature": 25,
+      "ambient_temperature": 30,
+      "mass_flow_rate": 0.05,
+      "fault_condition": "Normal Condition"
+    },
+    "response": {
+      "useful_heat_gain": 810.5,
+      "heat_loss": 200.0,
+      "thermal_efficiency": 65.2,
+      "simulated_outlet_temperature": 29.5
+    }
+  },
+  "analyze_performance": {
+    "request": {
+      "solar_irradiance": 800,
+      "inlet_temperature": 25,
+      "outlet_temperature": 28.5,
+      "ambient_temperature": 30,
+      "mass_flow_rate": 0.05,
+      "fault_condition": "Normal Condition"
+    },
+    "response": {
+      "thermal_efficiency": 55.0,
+      "heat_gain": 700.0,
+      "heat_loss": 310.0,
+      "performance_degradation": 15.6,
+      "condition": "Suboptimal",
+      "message": "Performance is significantly below theoretical maximum."
+    }
+  },
+  "detect_fault": {
+    "request": {
+      "solar_irradiance": 800,
+      "inlet_temperature": 25,
+      "outlet_temperature": 28.5,
+      "mass_flow_rate": 0.05,
+      "thermal_efficiency": 55.0,
+      "heat_gain": 700.0
+    },
+    "response": {
+      "predicted_fault": "Dust Accumulation",
+      "confidence_score": 88.5,
+      "suggestion": "Clean the collector glazing surface."
+    }
+  }
+}
