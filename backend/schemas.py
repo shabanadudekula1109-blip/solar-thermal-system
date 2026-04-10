@@ -3,11 +3,11 @@ from pydantic import BaseModel, Field
 from typing import List, Optional
 
 class SimulationInput(BaseModel):
-    solar_irradiance: float = Field(..., ge=200, le=1000, description="Solar Irradiance in W/m^2")
-    inlet_temperature: float = Field(..., ge=25, le=45, description="Inlet Temperature in Celsius")
-    outlet_temperature: Optional[float] = Field(None, ge=20, le=85, description="Outlet Temperature in Celsius (Optional for simulation, required for some analyses)")
-    ambient_temperature: float = Field(..., ge=20, le=40, description="Ambient Temperature in Celsius")
-    mass_flow_rate: float = Field(..., ge=0.01, le=0.05, description="Mass Flow Rate in kg/s")
+    solar_irradiance: float = Field(..., description="Solar Irradiance in W/m^2")
+    inlet_temperature: float = Field(..., description="Inlet Temperature in Celsius")
+    outlet_temperature: Optional[float] = Field(None, description="Outlet Temperature in Celsius (Optional for simulation, required for some analyses)")
+    ambient_temperature: float = Field(..., description="Ambient Temperature in Celsius")
+    mass_flow_rate: float = Field(..., description="Mass Flow Rate in kg/s")
     fault_condition: str = Field("Normal Condition", description="Condition to simulate (Normal Condition, Dust Accumulation, Heat Leakage, Pump Degradation, Sensor Drift)")
 
 class SimulationOutput(BaseModel):
@@ -25,10 +25,10 @@ class PerformanceAnalysisOutput(BaseModel):
     message: str
 
 class FaultDetectionInput(BaseModel):
-    solar_irradiance: float = Field(..., ge=0, le=1500)
-    inlet_temperature: float = Field(..., ge=0, le=100)
-    outlet_temperature: float = Field(..., ge=0, le=150)
-    mass_flow_rate: float = Field(..., ge=0, le=1.0)
+    solar_irradiance: float = Field(..., description="Solar Irradiance in W/m^2")
+    inlet_temperature: float = Field(..., description="Inlet Temperature in Celsius")
+    outlet_temperature: float = Field(..., description="Outlet Temperature in Celsius")
+    mass_flow_rate: float = Field(..., description="Mass Flow Rate in kg/s")
     thermal_efficiency: float
     heat_gain: float
 

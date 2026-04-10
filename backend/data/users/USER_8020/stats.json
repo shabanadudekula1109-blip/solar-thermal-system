@@ -1,7 +1,10 @@
 {
-    "total_simulations": 1,
-    "total_efficiency_sum": 68.23979385205897,
-    "recent_faults": [],
+    "total_simulations": 2,
+    "total_efficiency_sum": 128.26508225783607,
+    "recent_faults": [
+        "Pump Degradation",
+        "Pump Degradation"
+    ],
     "history": [
         {
             "timestamp": "14:06:07",
@@ -12,6 +15,11 @@
             "timestamp": "14:15:38",
             "efficiency": 68.24,
             "heat_gain": 955.36
+        },
+        {
+            "timestamp": "15:15:36",
+            "efficiency": 60.03,
+            "heat_gain": 1020.43
         }
     ]
 }

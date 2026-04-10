@@ -1,0 +1,17 @@
+services:
+  # --- BACKEND ---
+  - type: web
+    name: solar-thermal-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.x # A more general specification for Python version
+
+  # --- FRONTEND ---
+  - type: web
+    name: solar-thermal-frontend
+    env: static
+    buildCommand: "" # No build required for plain HTML/JS
+    staticPublishPath: ./frontend

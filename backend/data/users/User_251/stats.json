@@ -1,0 +1,12 @@
+{
+    "total_simulations": 1,
+    "total_efficiency_sum": 69.73125247443343,
+    "recent_faults": [],
+    "history": [
+        {
+            "timestamp": "12:36:37",
+            "efficiency": 69.73,
+            "heat_gain": 835.38
+        }
+    ]
+}

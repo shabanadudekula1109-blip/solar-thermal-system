@@ -1,5 +1,27 @@
 [
     {
+        "timestamp": "2026-02-14 15:16:27",
+        "solar_irradiance": 850.0,
+        "inlet_temperature": 30.0,
+        "outlet_temperature": 78.75,
+        "mass_flow_rate": 0.005,
+        "thermal_efficiency": 60.03,
+        "heat_gain": 1020.43,
+        "predicted_fault": "Pump Degradation",
+        "confidence_score": 95.0
+    },
+    {
+        "timestamp": "2026-02-14 15:15:42",
+        "solar_irradiance": 850.0,
+        "inlet_temperature": 30.0,
+        "outlet_temperature": 78.75,
+        "mass_flow_rate": 0.005,
+        "thermal_efficiency": 60.03,
+        "heat_gain": 1020.43,
+        "predicted_fault": "Pump Degradation",
+        "confidence_score": 95.0
+    },
+    {
         "timestamp": "2026-02-02 14:06:26",
         "solar_irradiance": 370.0,
         "inlet_temperature": 30.0,

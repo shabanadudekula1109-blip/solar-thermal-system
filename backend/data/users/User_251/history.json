@@ -1,0 +1,13 @@
+[
+    {
+        "timestamp": "2026-04-10 12:36:48",
+        "solar_irradiance": 599.0,
+        "inlet_temperature": 30.0,
+        "outlet_temperature": 33.99,
+        "mass_flow_rate": 0.05,
+        "thermal_efficiency": 69.73,
+        "heat_gain": 835.38,
+        "predicted_fault": "Normal Condition",
+        "confidence_score": 100.0
+    }
+]
