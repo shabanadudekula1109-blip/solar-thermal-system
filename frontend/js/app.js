@@ -5,7 +5,7 @@
 
 const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 // Note: When deployed, replace the PROD_API_URL string with your actual deployed Backend URL
-const PROD_API_URL = 'https://dersdp-backend.onrender.com';
+const PROD_API_URL = 'https://solar-thermal-backend.onrender.com';
 const API_BASE_URL = isLocalhost ? 'http://localhost:8000' : PROD_API_URL;
 
 // Global State
